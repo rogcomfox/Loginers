@@ -5,5 +5,5 @@ session_start();
 if (session_destroy()) {
     setcookie("admin", "", time() - 3600);
     setcookie("pw123", "", time() - 3600);
-    header("Location: login.html");
+    header("Location: login.php");
 }
